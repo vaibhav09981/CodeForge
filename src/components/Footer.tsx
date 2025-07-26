@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <Image
             src={"/logo-white.png"}
-            alt="positivus logo"
+            alt="Nuvue logo"
             width={180}
             height={30}
           />
@@ -84,7 +84,7 @@ const Footer = () => {
           <h3 className="text-black font-bold inline mb-10 lg:mb-0">
             <span className="bg-green px-1 py-0.5 rounded-lg">Contact us:</span>
           </h3>
-          <p>Email: info@positivus.com </p>
+          <p>Email: info@nuvue.com </p>
           <p>Phone: 555-567-8901</p>
           <p>
             Address: 1234 Main St <br />
@@ -121,7 +121,7 @@ const Footer = () => {
       <hr className="mt-10 lg:mt-[50px] text-gray" />
       <div className="mt-10 lg:mt-[50px] flex flex-col lg:flex-row items-center lg:items-end gap-4 lg:gap-8  text-white">
         <p className="text-white">
-          &copy; {new Date().getFullYear()} Positivus. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Nuvue. All Rights Reserved.
         </p>
 
         <a
