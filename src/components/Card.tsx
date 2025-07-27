@@ -3,21 +3,25 @@ import Image from "next/image";
 interface CardProps {
   title1: string;
   title2: string;
+  description: string;
   titleColor?: string;
   titleBgColor: string;
   bgColor: string;
   imgUrl: string;
   iconColor?: string;
+  descriptionColor?: string;
 }
 
 const Card = ({
   title1,
   title2,
+  description,
   titleBgColor,
   bgColor,
   imgUrl,
   titleColor = "text-black",
   iconColor = "black",
+  descriptionColor = "text-black",
 }: CardProps) => {
   return (
     <div
@@ -29,6 +33,7 @@ const Card = ({
           <br />
           <span className={`px-2 rounded-md ${titleBgColor}`}> {title2}</span>
         </h2>
+        <p className={`text-sm md:text-base ${descriptionColor}`}>{description}</p>
         <button
           className={`flex items-center gap-2 justify-self-end ${
             iconColor === "white" ? "text-white" : "text-black"

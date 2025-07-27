@@ -28,7 +28,7 @@ const ContactForm = () => {
                   <span className="absolute bg-green w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
                 </label>
                 <label className="ml-2 cursor-pointer text-sm" htmlFor="hi">
-                  Say Hi
+                  General Inquiry
                 </label>
               </div>
               <div className="inline-flex items-center ml-4">
@@ -45,7 +45,7 @@ const ContactForm = () => {
                   <span className="absolute bg-green w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
                 </label>
                 <label className="ml-2 cursor-pointer text-sm" htmlFor="quote">
-                  Get a Quote
+                  Partnership/Sponsorship
                 </label>
               </div>
             </div>

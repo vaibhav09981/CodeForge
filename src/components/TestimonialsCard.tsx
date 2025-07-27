@@ -15,30 +15,29 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    text: "We have been working with Nuvue for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Nuvue to any company looking to grow their online presence.",
-    author: "John Smith",
-    role: "Marketing Director at XYZ Corp",
-  },
-
-  {
-    text: "We have been working with Nuvue for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Nuvue to any company looking to grow their online presence."
-    author: "John Smith",
-    role: "Marketing Director at XYZ Corp",
+    text: "CodeForge gave me the confidence to contribute to a large codebase. The feedback from my peers was invaluable for my growth and understanding of real-world development practices.",
+    author: "Jane Doe",
+    role: "Computer Science Student",
   },
   {
-    text: "We have been working with Nuvue for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Nuvue to any company looking to grow their online presence."
+    text: "As a project lead, CodeForge provides an incredible platform to mentor new contributors and see innovative ideas come to life. The collaborative spirit here is truly inspiring.",
     author: "John Smith",
-    role: "Marketing Director at XYZ Corp",
+    role: "Project Lead for DSA Visualizer",
   },
   {
-    text: "We have been working with Nuvue for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Nuvue to any company looking to grow their online presence."
-    author: "John Smith",
-    role: "Marketing Director at XYZ Corp",
+    text: "I started at CodeForge with basic coding skills, and through the guidance of the community and hands-on experience, I've grown immensely. It's more than just coding; it's about building together.",
+    author: "Emily White",
+    role: "Aspiring Software Engineer",
   },
   {
-    text: "We have been working with Nuvue for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Nuvue to any company looking to grow their online presence."
-    author: "John Smith",
-    role: "Marketing Director at XYZ Corp",
+    text: "The open-source environment at CodeForge is fantastic for learning and experimenting. I was able to contribute to a feature that's now used by many, and that's a truly rewarding feeling.",
+    author: "David Green",
+    role: "Backend Developer & Contributor",
+  },
+  {
+    text: "CodeForge helped me bridge the gap between academic knowledge and practical application. The supportive community and clear contribution guidelines made my first open-source experience seamless and enjoyable.",
+    author: "Sarah Brown",
+    role: "Recent Graduate & Frontend Enthusiast",
   },
 ];
 

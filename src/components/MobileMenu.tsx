@@ -27,7 +27,7 @@ const MobileMenu = () => {
             className="block data-[focus]:bg-green/50 data-[focus]:font-bold rounded-lg py-1.5 px-3"
             href="#!"
           >
-            About Us
+            About
           </a>
         </MenuItem>
         <MenuItem>
@@ -35,7 +35,7 @@ const MobileMenu = () => {
             className="block data-[focus]:bg-green/50 data-[focus]:font-bold rounded-lg py-1.5 px-3"
             href="#!"
           >
-            Services
+            Projects
           </a>
         </MenuItem>
         <MenuItem>
@@ -43,17 +43,10 @@ const MobileMenu = () => {
             className="block data-[focus]:bg-green/50 data-[focus]:font-bold rounded-lg py-1.5 px-3"
             href="#!"
           >
-            Use Cases
+            Technologies
           </a>
         </MenuItem>
-        <MenuItem>
-          <a
-            className="block data-[focus]:bg-green/50 data-[focus]:font-bold rounded-lg py-1.5 px-3"
-            href="#!"
-          >
-            Pricing
-          </a>
-        </MenuItem>
+
         <MenuItem>
           <a
             className="block data-[focus]:bg-green/50 data-[focus]:font-bold rounded-lg py-1.5 px-3"
@@ -64,7 +57,7 @@ const MobileMenu = () => {
         </MenuItem>
         <MenuItem>
           <button className="w-full border border-dark mt-1.5 py-3 px-6 rounded-md data-[focus]:bg-green data-[focus]:font-medium transition-all">
-            Request a quote
+            Join the Community
           </button>
         </MenuItem>
       </MenuItems>

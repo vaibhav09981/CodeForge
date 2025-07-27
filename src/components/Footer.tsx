@@ -121,7 +121,7 @@ const Footer = () => {
       <hr className="mt-10 lg:mt-[50px] text-gray" />
       <div className="mt-10 lg:mt-[50px] flex flex-col lg:flex-row items-center lg:items-end gap-4 lg:gap-8  text-white">
         <p className="text-white">
-          &copy; {new Date().getFullYear()} Nuvue. All Rights Reserved.
+          &copy; 2025 CodeForge. All Rights Reserved.
         </p>
 
         <a
