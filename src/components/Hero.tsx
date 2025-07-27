@@ -22,9 +22,7 @@ const Hero = () => {
             />
           </div>
           <p className="text-lg md:text-xl py-9 lg:max-w-lg">
-            Our digital marketing agency helps businesses grow and succeed
-            online through a range of services including SEO, PPC, social media
-            marketing, and content creation.
+            CodeForge is a student-led community dedicated to building practical skills through collaborative, open-source projects. We bridge the gap between theory and industry, empowering the next generation of developers.
           </p>
           <button className="w-full lg:w-auto lg:self-start px-9 py-4 bg-black text-gray rounded-xl">
             Book a consultation
