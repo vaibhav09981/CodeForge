@@ -15,48 +15,56 @@ const Services = () => {
       {/* Crads Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pt-10 lg:pt-16 place-items-center">
         <Card
-          title1="Search engine"
-          title2="optimization"
+          title1="Collaborative"
+          title2="Projects"
+          description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software from the ground up."
           titleBgColor="bg-green"
           bgColor="bg-grey"
-          imgUrl="/seo.png"
+          imgUrl="/teamwork.png" // Placeholder for teamwork/building blocks icon
         />
         <Card
-          title1="Pay-per-click"
-          title2="advertising"
+          title1="Portfolio"
+          title2="Building"
+          description="Build a public portfolio of work that stands out. Your contributions on GitHub will create a powerful showcase of your skills for future employers."
           titleBgColor="bg-white"
           bgColor="bg-green"
-          imgUrl="/pay.png"
+          imgUrl="/portfolio.png" // Placeholder for personal profile/achievement icon
         />
         <Card
-          title1="Social Media"
-          title2="Marketing"
+          title1="Mentorship &"
+          title2="Learning"
+          description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from collaborative code reviews to technical workshops."
           titleBgColor="bg-white"
           bgColor="bg-dark"
-          imgUrl="/social.png"
+          imgUrl="/mentorship.png" // Placeholder for communication/guidance icon
           iconColor="white"
+          descriptionColor="text-gray-50"
         />
         <Card
-          title1="Email"
-          title2="Marketing"
+          title1="Open-Source"
+          title2="Contribution"
+          description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs and writing documentation to adding new features."
           titleBgColor="bg-green"
           bgColor="bg-grey"
-          imgUrl="/email-marketing.png"
+          imgUrl="/github.png" // Placeholder for GitHub/open-source icon
         />
         <Card
-          title1="Content"
-          title2="Creation"
+          title1="Interview &"
+          title2="Career Prep"
+          description="Prepare for the job market with mock technical interviews, resume-building sessions, and discussions on industry best practices and career strategies."
           titleBgColor="bg-white"
           bgColor="bg-green"
-          imgUrl="/content-creation.png"
+          imgUrl="/career.png" // Placeholder for goals/career progression icon
         />
         <Card
-          title1="Analytics and"
-          title2="Tracking"
+          title1="Modern Tech"
+          title2="Stacks"
+          description="Work with the technologies that power the modern web. Get hands-on with cutting-edge tools like React, Next.js, Tailwind CSS, and more."
           titleBgColor="bg-green"
           bgColor="bg-dark"
-          imgUrl="/analytics.png"
+          imgUrl="/tech-stacks.png" // Placeholder for tech logos icon
           iconColor="white"
+          descriptionColor="text-gray-50"
         />
       </div>
 
