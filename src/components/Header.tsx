@@ -100,7 +100,7 @@ const Header = () => {
           </li>
           <li>
             <a href="#!">
-              <button className="border border-dark py-3 px-6 rounded-md hover:font-medium hover:border-green hover:border-transparent hover:outline-2 hover:outline hover:outline-green transition-all">
+              <button className="bg-green text-black py-3 px-6 rounded-md hover:font-medium hover:border hover:border-black transition-all">
                 Join the Community
               </button>
             </a>
