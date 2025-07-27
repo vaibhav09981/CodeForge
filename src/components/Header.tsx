@@ -70,7 +70,7 @@ const Header = () => {
               href="#!"
               className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
             >
-              About us
+              About
             </a>
           </li>
           <li>
@@ -78,7 +78,7 @@ const Header = () => {
               href="#!"
               className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
             >
-              Services
+              Projects
             </a>
           </li>
           <li>
@@ -86,17 +86,10 @@ const Header = () => {
               href="#!"
               className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
             >
-              Use Cases
+              Technologies
             </a>
           </li>
-          <li>
-            <a
-              href="#!"
-              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
-            >
-              Pricing
-            </a>
-          </li>
+
           <li>
             <a
               href="#!"
@@ -108,7 +101,7 @@ const Header = () => {
           <li>
             <a href="#!">
               <button className="border border-dark py-3 px-6 rounded-md hover:font-medium hover:border-green hover:border-transparent hover:outline-2 hover:outline hover:outline-green transition-all">
-                Request a quote
+                Join the Community
               </button>
             </a>
           </li>

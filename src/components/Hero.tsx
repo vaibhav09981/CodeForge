@@ -9,7 +9,7 @@ const Hero = () => {
       <section className="flex justify-between py-12 pb-10 lg:py-16">
         <article className="flex flex-col items-center md:items-start">
           <h1 className="font-medium text-4xl/normal md:text-6xl/normal lg:max-w-xl">
-            Navigating the digital landscape for success
+            From Concept to Code. Building Real-World Developers.
           </h1>
           <div className="lg:hidden mt-9 lg:mt-0">
             <Image
