@@ -72,14 +72,13 @@ const Services = () => {
       <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-gray mt-24 lg:mt-36">
         <div className="max-w-md flex flex-col gap-4">
           <h2 className="font-medium text-3xl">
-            Let&apos;s make things happen
+            Ready to Build With Us?
           </h2>
           <p>
-            Contact us today to learn more about how our digital marketing
-            services can help your business grow and succeed online.
+            Join a growing community of passionate student developers. Whether you're a beginner or an expert, your contribution matters.
           </p>
           <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
-            Get your free proposal
+            Join Our WhatsApp Community
           </button>
         </div>
         <div>
