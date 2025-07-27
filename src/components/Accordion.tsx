@@ -13,10 +13,10 @@ export default function Accordion() {
     <section className="pt-24 sm:pt-36 px-4">
       <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start sm:gap-10">
         <h2 className="bg-green text-3xl font-bold p-2 rounded-sm">
-          Our Working Process
+          Your Journey at CodeForge
         </h2>
         <p className="max-w-xs">
-          Step-by-Step Guide to Achieving Your Business Goals
+          A Step-by-Step Guide to Becoming a Contributor
         </p>
       </div>
       <div
@@ -33,8 +33,7 @@ export default function Accordion() {
               01
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              {" "}
-              Consultation
+              Join the Community
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -44,9 +43,7 @@ export default function Accordion() {
         {activeSection === 1 && (
           <div className="py-7 border-t">
             <p>
-              Discuss your business goals and objectives, target audience, and
-              current marketing efforts to tailor our services to meet your
-              specific requirements.
+              Start by joining our Discord and GitHub organization to meet the team and see what we're working on.
             </p>
           </div>
         )}
@@ -66,7 +63,7 @@ export default function Accordion() {
               02
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Research and Strategy Development
+              Pick a Project
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -76,9 +73,7 @@ export default function Accordion() {
         {activeSection === 2 && (
           <div className="py-7 border-t">
             <p>
-              Conduct thorough market research to understand your target
-              audience and develop a strategic plan to achieve your business
-              objectives.
+              Explore our active projects, find one that interests you, and read the contribution guidelines to get started.
             </p>
           </div>
         )}
@@ -98,7 +93,7 @@ export default function Accordion() {
               03
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Implementation
+              Make Your First Contribution
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -108,8 +103,7 @@ export default function Accordion() {
         {activeSection === 3 && (
           <div className="py-7 border-t">
             <p>
-              Execute the strategic plan by implementing marketing campaigns,
-              content creation, and other necessary actions.
+              Clone the repository, set up the project, and tackle your first issue—whether it's a bug fix, documentation, or a new feature.
             </p>
           </div>
         )}
@@ -129,7 +123,7 @@ export default function Accordion() {
               04
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Monitoring and Optimization
+              Code Review & Feedback
             </span>
           </h3>
 
@@ -140,8 +134,7 @@ export default function Accordion() {
         {activeSection === 4 && (
           <div className="py-7 border-t">
             <p>
-              Continuously monitor the performance of your marketing efforts and
-              make data-driven optimizations to improve results.
+              Submit your changes for review. Our team provides constructive feedback to help you improve your code and learn best practices.
             </p>
           </div>
         )}
@@ -161,7 +154,7 @@ export default function Accordion() {
               05
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Reporting and Communication
+              Merge & Deploy
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -171,9 +164,7 @@ export default function Accordion() {
         {activeSection === 5 && (
           <div className="py-7 border-t">
             <p>
-              Provide regular reports and communicate insights to keep you
-              informed about the progress and success of your marketing
-              initiatives.
+              Once approved, your contributions are merged into the main project and deployed, making your work live for everyone to see.
             </p>
           </div>
         )}
@@ -193,11 +184,18 @@ export default function Accordion() {
               06
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              Continual Improvement
+              Showcase Your Work
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
             <span className="text-4xl"> {activeSection === 6 ? "−" : "+"}</span>
+          </div>
+        </div>
+        {activeSection === 6 && (
+          <div className="py-7 border-t">
+            <p>
+              Your merged contributions are highlighted in our community updates and can be proudly displayed in your personal portfolio.
+            </p>
           </div>
         </div>
         {activeSection === 6 && (
