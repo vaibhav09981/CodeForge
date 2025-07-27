@@ -1,5 +1,4 @@
 import React from "react";
-import TeamCard, { TeamCardProps } from "./TeamCard";
 
 const Team = () => {
   return (

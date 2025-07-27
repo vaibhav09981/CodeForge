@@ -75,7 +75,7 @@ const Services = () => {
             Ready to Build With Us?
           </h2>
           <p>
-            Join a growing community of passionate student developers. Whether you're a beginner or an expert, your contribution matters.
+            Join a growing community of passionate student developers. Whether you&apos;re a beginner or an expert, your contribution matters.
           </p>
           <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
             Join Our WhatsApp Community
