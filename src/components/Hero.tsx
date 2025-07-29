@@ -15,7 +15,7 @@ const Hero = () => {
             <Image
               src={"/speaker.png"}
               alt="speaker image"
-              width={560}
+              width={750}
               height={0}
               priority
               className="lg:hidden w-auto h-auto"
@@ -32,7 +32,7 @@ const Hero = () => {
           <Image
             src={"/speaker.png"}
             alt="speaker image"
-            width={560}
+            width={700}
             height={0}
             priority
             className="w-auto h-auto object-cover"
