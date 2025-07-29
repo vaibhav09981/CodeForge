@@ -8,9 +8,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Nuvue",
+  title: "CodeForge",
   description:
-    "Nuvue is a beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Nuvue is the perfect template to showcase your agency's services and case studies to potential clients",
+    "CodeForge is a beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, CodeForge is the perfect template to showcase your agency's services and case studies to potential clients",
 };
 
 export default function RootLayout({
