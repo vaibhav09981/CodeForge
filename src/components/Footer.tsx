@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <Image
             src={"/logo-white.png"}
-            alt="Nuvue logo"
+            alt="CodeForge logo"
             width={180}
             height={30}
           />
@@ -84,7 +84,7 @@ const Footer = () => {
           <h3 className="text-black font-bold inline mb-10 lg:mb-0">
             <span className="bg-green px-1 py-0.5 rounded-lg">Contact us:</span>
           </h3>
-          <p>Email: info@nuvue.com </p>
+          <p>Email: info@codeforge.com </p>
           <p>Phone: 555-567-8901</p>
           <p>
             Address: 1234 Main St <br />
