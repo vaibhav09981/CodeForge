@@ -38,7 +38,7 @@ const Services = () => {
           bgColor="bg-dark"
           imgUrl="/mentorship.png" // Placeholder for communication/guidance icon
           iconColor="white"
-          descriptionColor="text-gray-50"
+          descriptionColor="text-white"
         />
         <Card
           title1="Open-Source"
@@ -64,7 +64,7 @@ const Services = () => {
           bgColor="bg-dark"
           imgUrl="/tech-stacks.png" // Placeholder for tech logos icon
           iconColor="white"
-          descriptionColor="text-gray-50"
+          descriptionColor="text-white"
         />
       </div>
 

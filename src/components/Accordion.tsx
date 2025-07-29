@@ -127,7 +127,7 @@ const Accordion: React.FC = () => {
         {activeSection === 4 && (
           <div className="py-7 border-t">
             <p>
-              Our team provides constructive feedback to help you improve your code and learn best practices. We believe in collaborative learning, so don't hesitate to ask questions and engage in discussions during the review process.
+              Our team provides constructive feedback to help you improve your code and learn best practices. We believe in collaborative learning, so don&apos;t hesitate to ask questions and engage in discussions during the review process.
             </p>
           </div>
         )}
