@@ -3,6 +3,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import LoginSignup from "@/components/LoginSignup";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="max-w-[1440px] m-auto xl:px-24 pt-10">
       <Hero />
+      <LoginSignup />
       <Services />
       <CaseStudies />
       <Accordion />
