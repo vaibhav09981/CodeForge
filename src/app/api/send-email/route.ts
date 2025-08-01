@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { email, password } = await request.json();
+    const { email, password, fullName, qualification, totalProjects, githubUrl, profilePicUrl } = await request.json();
 
     // Create a Nodemailer transporter using your email service credentials
     const transporter = nodemailer.createTransport({
@@ -18,7 +19,18 @@ export async function POST(request: Request) {
       from: 'YOUR_EMAIL_ADDRESS', // Sender address
       to: 'vaibhavjj99@gmail.com', // Recipient address
       subject: 'New User Registration',
-      html: `<p>A new user has registered:</p><p>Email: ${email}</p><p>Password: ${password}</p>`, // Email content
+      html: `
+        <p>A new user has registered:</p>
+        <ul>
+          <li><strong>Email:</strong> ${email}</li>
+          <li><strong>Password:</strong> ${password}</li>
+          <li><strong>Full Name:</strong> ${fullName}</li>
+          <li><strong>Qualification:</strong> ${qualification}</li>
+          <li><strong>Total Projects:</strong> ${totalProjects}</li>
+          <li><strong>GitHub URL:</strong> ${githubUrl}</li>
+          <li><strong>Profile Picture URL:</strong> ${profilePicUrl || 'N/A'}</li>
+        </ul>
+      `, // Email content
     };
 
     await transporter.sendMail(mailOptions);

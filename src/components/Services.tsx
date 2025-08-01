@@ -1,93 +1,96 @@
 import React from "react";
-import Card from "./Card";
-import Image from "next/image";
+import Card from "./Card"; // Assuming Card component is correctly set up
 
-const Services = () => {
+interface ServicesProps {
+  onJoinClick: () => void;
+}
+
+// Let's rename 'Services' to 'WhatWeOffer' to be more descriptive of its new purpose.
+const WhatWeOffer: React.FC<ServicesProps> = ({ onJoinClick }) => {
   return (
-    <div className="pt-24 md:pt-36 px-4">
-      <div className="flex flex-col sm:flex-row text-center sm:text-start items-center gap-5 md:gap-10">
-        <h2 className="bg-green text-3xl font-bold p-2 rounded-md">Services</h2>
-        <p className="max-w-xl">
-          At our digital marketing agency, we offer a range of services to help
-          businesses grow and succeed online. These services include:
+    // Using an ID is great for anchor links (e.g., from the "Explore Our Projects" button)
+    <div id="what-we-offer" className="pt-24 md:pt-36 px-4 flex flex-col md:flex-row gap-8">
+      
+      {/* Left Column: Title and Description */}
+      <div className="md:w-1/3 text-left">
+        <div className="flex items-center mb-6">
+          {/* Replaced "Services" with a more fitting title */}
+          <h2 className="bg-green text-3xl font-bold p-2 rounded-md mr-4">What We Offer</h2>
+        </div>
+        {/* Updated the descriptive paragraph */}
+        <p className="max-w-xl mb-8">
+          At CodeForge, we provide a complete ecosystem for aspiring developers. 
+          These are the core pillars of our community:
+        </p>
+
+        {/* This is a great spot for a secondary Call to Action */}
+        <div 
+          className="bg-green-500 text-white py-3 px-6 rounded-md inline-block cursor-pointer hover:bg-green-600 transition-colors duration-300" 
+          onClick={onJoinClick}
+        >
+          <span className="text-xl font-bold">Join the Community</span>
+        </div>
+        <p className="text-gray-700 mt-4">
+          Unlock exclusive resources, networking opportunities, and collaborative projects designed to help you grow and succeed.
         </p>
       </div>
-      {/* Crads Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pt-10 lg:pt-16 place-items-center">
-        <Card
-          title1="Collaborative"
-          title2="Projects"
-          description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software from the ground up."
-          titleBgColor="bg-green"
-          bgColor="bg-grey"
-          imgUrl="/teamwork.png" // Placeholder for teamwork/building blocks icon
-        />
-        <Card
-          title1="Portfolio"
-          title2="Building"
-          description="Build a public portfolio of work that stands out. Your contributions on GitHub will create a powerful showcase of your skills for future employers."
-          titleBgColor="bg-white"
-          bgColor="bg-green"
-          imgUrl="/portfolio.png" // Placeholder for personal profile/achievement icon
-        />
-        <Card
-          title1="Mentorship &"
-          title2="Learning"
-          description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from collaborative code reviews to technical workshops."
-          titleBgColor="bg-white"
-          bgColor="bg-dark"
-          imgUrl="/mentorship.png" // Placeholder for communication/guidance icon
-          iconColor="white"
-          descriptionColor="text-white"
-        />
-        <Card
-          title1="Open-Source"
-          title2="Contribution"
-          description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs and writing documentation to adding new features."
-          titleBgColor="bg-green"
-          bgColor="bg-grey"
-          imgUrl="/github.png" // Placeholder for GitHub/open-source icon
-        />
-        <Card
-          title1="Interview &"
-          title2="Career Prep"
-          description="Prepare for the job market with mock technical interviews, resume-building sessions, and discussions on industry best practices and career strategies."
-          titleBgColor="bg-white"
-          bgColor="bg-green"
-          imgUrl="/career.png" // Placeholder for goals/career progression icon
-        />
-        <Card
-          title1="Modern Tech"
-          title2="Stacks"
-          description="Work with the technologies that power the modern web. Get hands-on with cutting-edge tools like React, Next.js, Tailwind CSS, and more."
-          titleBgColor="bg-green"
-          bgColor="bg-dark"
-          imgUrl="/tech-stacks.png" // Placeholder for tech logos icon
-          iconColor="white"
-          descriptionColor="text-white"
-        />
-      </div>
 
-      {/* Proposal section */}
-      <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-gray mt-24 lg:mt-36">
-        <div className="max-w-md flex flex-col gap-4">
-          <h2 className="font-medium text-3xl">
-            Ready to Build With Us?
-          </h2>
-          <p>
-            Join a growing community of passionate student developers. Whether you&apos;re a beginner or an expert, your contribution matters.
-          </p>
-          <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
-            Join Our WhatsApp Community
-          </button>
-        </div>
-        <div>
-          <Image
-            src="/stars.png"
-            width={350}
-            height={200}
-            alt="decorative stars"
-            className="hidden lg:block absolute -top-6 -bottom-4 right-0 mr-24 w-auto h-auto"
+      {/* Right Column: The Grid of Cards */}
+      <div className="md:w-2/3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pt-10 lg:pt-0 place-items-center">
+          {/* Card 1 */}
+          <Card
+            title1="Collaborative"
+            title2="Projects"
+            description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software."
+            titleBgColor="bg-green"
+            bgColor="bg-grey" // Assuming 'bg-grey' is your white/light-gray color
+            imgUrl="/images/teamwork.png" // Best practice to keep images in a subfolder
+          />
+          {/* Card 2 */}
+          <Card
+            title1="Portfolio"
+            title2="Building"
+            description="Build a public portfolio that stands out. Your contributions on GitHub will create a powerful showcase of your skills for future employers."
+            titleBgColor="bg-white"
+            bgColor="bg-green"
+            imgUrl="/images/portfolio.png"
+          />
+          {/* Card 3 - Completed */}
+          <Card
+            title1="Mentorship &" // Use '&' directly in JSX
+            title2="Learning"
+            description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from code reviews to technical workshops."
+            titleBgColor="bg-white"
+            bgColor="bg-black" // Following the alternating color scheme
+            imgUrl="/images/mentorship.png"
+          />
+          {/* Card 4 */}
+          <Card
+            title1="Open-Source"
+            title2="Contribution"
+            description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs to adding new features."
+            titleBgColor="bg-green"
+            bgColor="bg-grey"
+            imgUrl="/images/opensource.png"
+          />
+          {/* Card 5 */}
+          <Card
+            title1="Interview &"
+            title2="Career Prep"
+            description="Prepare for the job market with mock interviews, resume-building sessions, and discussions on industry best practices."
+            titleBgColor="bg-white"
+            bgColor="bg-green"
+            imgUrl="/images/career.png"
+          />
+          {/* Card 6 */}
+          <Card
+            title1="Modern Tech"
+            title2="Stacks"
+            description="Work with the technologies that power the modern web. Get hands-on with tools like React, Next.js, and Tailwind CSS."
+            titleBgColor="bg-green"
+            bgColor="bg-black"
+            imgUrl="/images/tech-stack.png"
           />
         </div>
       </div>
@@ -95,4 +98,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default WhatWeOffer;
