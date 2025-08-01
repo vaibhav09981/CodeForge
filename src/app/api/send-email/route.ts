@@ -1,43 +1,38 @@
-import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { email, password, fullName, qualification, totalProjects, githubUrl, profilePicUrl } = await request.json();
+    const body = await request.json();
+    const { email } = body;
 
-    // Create a Nodemailer transporter using your email service credentials
+    if (!email || typeof email !== 'string' || !email.includes('@')) {
+      return NextResponse.json({ error: 'Invalid or missing email address' }, { status: 400 });
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail', // or your email service
       auth: {
-        user: 'YOUR_EMAIL_ADDRESS', // Your email address
-        pass: 'YOUR_EMAIL_PASSWORD', // Your email password or app-specific password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
       from: 'YOUR_EMAIL_ADDRESS', // Sender address
-      to: 'vaibhavjj99@gmail.com', // Recipient address
+      to: email, // Recipient address
       subject: 'New User Registration',
       html: `
-        <p>A new user has registered:</p>
-        <ul>
-          <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Password:</strong> ${password}</li>
-          <li><strong>Full Name:</strong> ${fullName}</li>
-          <li><strong>Qualification:</strong> ${qualification}</li>
-          <li><strong>Total Projects:</strong> ${totalProjects}</li>
-          <li><strong>GitHub URL:</strong> ${githubUrl}</li>
-          <li><strong>Profile Picture URL:</strong> ${profilePicUrl || 'N/A'}</li>
-        </ul>
-      `, // Email content
+        <p>A new user has opt for the newsletter:</p>
+        <p>Check out the Database for the new query on this exact email</p>
+      `,
     };
 
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: 'Email sent successfully' });
-  } catch (error: any) {
-    console.error('Error sending email:', error);
+  } catch (error) {
+    console.error('Email sending failed:', error);
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }
