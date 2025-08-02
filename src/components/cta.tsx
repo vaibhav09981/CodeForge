@@ -3,6 +3,9 @@ import React from 'react';
 import { PartyPopper } from "lucide-react"
 
 const LoginSignup = () => {
+  const communityLink = process.env.NEXT_PUBLIC_COMMUNITY_LINK;
+  if (!communityLink) return null;
+
   return (
     <div>
       <section className="py-16 bg-gray-100">
@@ -19,7 +22,7 @@ const LoginSignup = () => {
           <div className='flex justify-center'>
             <button
               className="group bg-green text-black py-2 px-6 rounded-md hover:scale-105 transition-all duration-300 relative"
-              onClick={() => window.open("https://chat.whatsapp.com/COMMUNITY_LINK", "_blank")}
+              onClick={() => window.open(communityLink, "_blank")}
             >
               Join Now
               <span className="absolute -top-3 -right-3 text-lg opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300">
