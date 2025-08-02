@@ -33,7 +33,7 @@ const Accordion: React.FC = () => {
               01
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              How do I begin my journey at CodeForge?
+              How do we begin our journey at CodeForge?
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -61,7 +61,7 @@ const Accordion: React.FC = () => {
               02
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              How do I choose a project to work on?
+              How do we choose a project to work on?
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -89,7 +89,7 @@ const Accordion: React.FC = () => {
               03
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              What&apos;s the process for making my first contribution?
+              What&apos;s the process for making our first contribution?
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -145,7 +145,7 @@ const Accordion: React.FC = () => {
               05
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              What happens after my code is reviewed?
+              What happens after our code is reviewed?
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
@@ -173,7 +173,7 @@ const Accordion: React.FC = () => {
               06
             </span>{" "}
             <span className="text-xl sm:text-3xl self-center">
-              How can I showcase my contributions?
+              How can we showcase our contributions?
             </span>
           </h3>
           <div className="flex justify-center items-center text-2xl border rounded-full w-10 h-10 bg-white">
