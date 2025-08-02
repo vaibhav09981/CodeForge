@@ -8,7 +8,7 @@ const Hero = () => {
       <Header />
       <section className="flex justify-between py-12 pb-10 lg:py-16">
         <article className="flex flex-col items-center md:items-start">
-          <h1 className="font-medium text-4xl/normal md:text-6xl/normal lg:max-w-xl">
+          <h1 className="font-medium text-4xl md:text-4xl lg:max-w-xl">
             From Concept to Code. Building Real-World Developers.
           </h1>
           <div className="lg:hidden mt-9 lg:mt-0">
@@ -21,12 +21,10 @@ const Hero = () => {
               className="lg:hidden w-auto h-auto"
             />
           </div>
-          <p className="text-lg md:text-xl py-9 lg:max-w-lg">
+          <p className="text-lg md:text-lg py-9 lg:max-w-lg">
             CodeForge is a student-led community dedicated to building practical skills through collaborative, open-source projects. We bridge the gap between theory and industry, empowering the next generation of developers.
           </p>
-          <a href="#projects" className="w-full lg:w-auto lg:self-start px-9 py-4 bg-black text-white rounded-xl text-center">
-            Explore Our Projects
-          </a>
+          <a href="#projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
         </article>
         <div className="hidden lg:block">
           <Image
