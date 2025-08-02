@@ -1,42 +1,36 @@
 import React from "react";
-import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center">
-      <div className="w-[220px] h-[56px]">
+      <div className="w-auto">
         <a href="#">
-          <Image
-            src={"/logo-white.png"}
-            alt="CodeForge logo"
-            width={250}
-            height={65}
-          />
+          <p className="font-bold text-3xl">{"</"}C<span className="text-green">F</span>{">"} Code<span className="text-green">Forge</span></p>
         </a>
       </div>
       <nav>
         <ul className="hidden lg:flex p-4 gap-x-1 items-center">
           <li>
             <a
-              href="#!"
-              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
+              href="#about"
+              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all duration-300"
             >
               About
             </a>
           </li>
           <li>
             <a
-              href="#!"
-              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
+              href="#projects"
+              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold duration-300 transition-all"
             >
               Projects
             </a>
           </li>
           <li>
             <a
-              href="#!"
-              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
+              href="#techniques"
+              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all duration-300"
             >
               Technologies
             </a>
@@ -44,15 +38,15 @@ const Header = () => {
 
           <li>
             <a
-              href="#!"
-              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all"
+              href="#blogs"
+              className="py-2 px-4 rounded-md hover:bg-green hover:font-bold transition-all duration-300"
             >
               Blog
             </a>
           </li>
           <li>
-            <a href="#!">
-              <button className="bg-green text-black py-3 px-6 rounded-md hover:font-medium hover:border hover:border-black transition-all">
+            <a href="#join">
+              <button className="bg-green text-black py-3 px-6 rounded-md duration-300 hover:font-medium hover:scale-105">
                 Join the Community
               </button>
             </a>

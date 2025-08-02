@@ -1,16 +1,9 @@
 import React from "react";
-import Card from "./Card"; // Assuming Card component is correctly set up
+import Card from "./Card";
 
-interface ServicesProps {
-  onJoinClick: () => void;
-}
-
-// Let's rename 'Services' to 'WhatWeOffer' to be more descriptive of its new purpose.
-const WhatWeOffer: React.FC<ServicesProps> = ({ onJoinClick }) => {
+const WhatWeOffer: React.FC = () => {
   return (
-    // Using an ID is great for anchor links (e.g., from the "Explore Our Projects" button)
-    <div id="what-we-offer" className="pt-24 md:pt-36 px-4 flex flex-col md:flex-row gap-8">
-      
+    <div id="what-we-offer" className="pt-24 md:pt-36 px-4 flex flex-col md:flex-row gap-6">
       {/* Left Column: Title and Description */}
       <div className="md:w-1/3 text-left">
         <div className="flex items-center mb-6">
@@ -24,10 +17,7 @@ const WhatWeOffer: React.FC<ServicesProps> = ({ onJoinClick }) => {
         </p>
 
         {/* This is a great spot for a secondary Call to Action */}
-        <div 
-          className="bg-green-500 text-white py-3 px-6 rounded-md inline-block cursor-pointer hover:bg-green-600 transition-colors duration-300" 
-          onClick={onJoinClick}
-        >
+        <div className="bg-green-500 text-white py-3 px-6 rounded-md inline-block cursor-pointer hover:bg-green-600 transition-colors duration-300">
           <span className="text-xl font-bold">Join the Community</span>
         </div>
         <p className="text-gray-700 mt-4">
@@ -44,44 +34,26 @@ const WhatWeOffer: React.FC<ServicesProps> = ({ onJoinClick }) => {
             title2="Projects"
             description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software."
             titleBgColor="bg-green"
-            bgColor="bg-grey" // Assuming 'bg-grey' is your white/light-gray color
-            imgUrl="/images/teamwork.png" // Best practice to keep images in a subfolder
+            bgColor="bg-grey"
+            imgUrl="/images/teamwork.png"
           />
           {/* Card 2 */}
           <Card
             title1="Portfolio"
             title2="Building"
-            description="Build a public portfolio that stands out. Your contributions on GitHub will create a powerful showcase of your skills for future employers."
+            description="Your contributions on GitHub will create a powerful showcase of your skills for future employers."
             titleBgColor="bg-white"
             bgColor="bg-green"
             imgUrl="/images/portfolio.png"
-          />
-          {/* Card 3 - Completed */}
-          <Card
-            title1="Mentorship &" // Use '&' directly in JSX
-            title2="Learning"
-            description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from code reviews to technical workshops."
-            titleBgColor="bg-white"
-            bgColor="bg-black" // Following the alternating color scheme
-            imgUrl="/images/mentorship.png"
           />
           {/* Card 4 */}
           <Card
             title1="Open-Source"
             title2="Contribution"
             description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs to adding new features."
-            titleBgColor="bg-green"
-            bgColor="bg-grey"
-            imgUrl="/images/opensource.png"
-          />
-          {/* Card 5 */}
-          <Card
-            title1="Interview &"
-            title2="Career Prep"
-            description="Prepare for the job market with mock interviews, resume-building sessions, and discussions on industry best practices."
             titleBgColor="bg-white"
             bgColor="bg-green"
-            imgUrl="/images/career.png"
+            imgUrl="/images/opensource.png"
           />
           {/* Card 6 */}
           <Card
@@ -89,7 +61,7 @@ const WhatWeOffer: React.FC<ServicesProps> = ({ onJoinClick }) => {
             title2="Stacks"
             description="Work with the technologies that power the modern web. Get hands-on with tools like React, Next.js, and Tailwind CSS."
             titleBgColor="bg-green"
-            bgColor="bg-black"
+            bgColor="bg-white"
             imgUrl="/images/tech-stack.png"
           />
         </div>
