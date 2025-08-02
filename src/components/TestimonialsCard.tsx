@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    text: "CodeForge gave me the confidence to contribute to a large codebase. The feedback from my peers was invaluable for my growth and understanding of real-world development practices.",
+    text: "CodeForge gave us the confidence to contribute to a large codebase. The feedback from our peers was invaluable for our growth and understanding of real-world development practices.",
     author: "Jane Doe",
     role: "Computer Science Student",
   },
@@ -25,17 +25,17 @@ const testimonials = [
     role: "Project Lead for DSA Visualizer",
   },
   {
-    text: "I started at CodeForge with basic coding skills, and through the guidance of the community and hands-on experience, I've grown immensely. It's more than just coding; it's about building together.",
+    text: "We started at CodeForge with basic coding skills, and through the guidance of the community and hands-on experience, we've grown immensely. It's more than just coding; it's about building together.",
     author: "Emily White",
     role: "Aspiring Software Engineer",
   },
   {
-    text: "The open-source environment at CodeForge is fantastic for learning and experimenting. I was able to contribute to a feature that's now used by many, and that's a truly rewarding feeling.",
+    text: "The open-source environment at CodeForge is fantastic for learning and experimenting. We were able to contribute to a feature that's now used by many, and that's a truly rewarding feeling.",
     author: "David Green",
     role: "Backend Developer & Contributor",
   },
   {
-    text: "CodeForge helped me bridge the gap between academic knowledge and practical application. The supportive community and clear contribution guidelines made my first open-source experience seamless and enjoyable.",
+    text: "CodeForge helped us bridge the gap between academic knowledge and practical application. The supportive community and clear contribution guidelines made our first open-source experience seamless and enjoyable.",
     author: "Sarah Brown",
     role: "Recent Graduate & Frontend Enthusiast",
   },
