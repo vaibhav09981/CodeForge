@@ -1,4 +1,4 @@
- 'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Cropper from 'react-easy-crop';
@@ -139,23 +139,7 @@ const LoginSignup = () => {
 
   return (
     <div>
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4 text-left max-w-md">
-          <div className="mb-6">
-            <div className="bg-green-500 text-white py-2 px-6 rounded-md inline-block mb-4">
-              <span className="text-xl font-bold">Community</span>
-            </div>
-            <h2 className="text-3xl font-bold mb-4">Be a part of Our Community</h2>
-            <p className="text-gray-700 mb-4">Join our vibrant community of professionals and unlock exclusive resources, networking opportunities, and collaborative projects designed to help you grow and succeed.</p>
-          </div>
-          <button
-            className="bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600 transition-colors duration-300"
-            onClick={() => setShowForms(true)}
-          >
-            Join our community
-          </button>
-        </div>
-      </section>
+
 
 
 
