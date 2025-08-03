@@ -25,15 +25,15 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`grid grid-cols-2 gap-2 px-4 py-12 md:p-12 rounded-[45px] border border-b-4 max-w-xl w-full ${bgColor}`}
+      className={`grid grid-cols-2 gap-2 px-2 py-3 md:py-4 md:px-4 rounded-[45px] border border-b-4 w-full ${bgColor}`}
     >
-      <div className="flex flex-col gap-8 justify-between">
-        <h2 className={`text-xl md:text-2xl font-bold leading-7 ${titleColor}`}>
+      <div className="flex flex-col gap-6 justify-between">
+        <h2 className={`text-lg md:text-xl font-bold leading-6 ${titleColor}`}>
           <span className={`px-2 rounded-md ${titleBgColor}`}>{title1}</span>{" "}
           <br />
           <span className={`px-2 rounded-md ${titleBgColor}`}> {title2}</span>
         </h2>
-        <p className={`text-sm md:text-base ${descriptionColor}`}>{description}</p>
+        <p className={`text-xs md:text-sm ${descriptionColor}`}>{description}</p>
         <button
           className={`flex items-center gap-2 justify-self-end ${
             iconColor === "white" ? "text-white" : "text-black"
@@ -57,7 +57,7 @@ const Card = ({
         <Image
           src={imgUrl}
           alt={`${title1} ${title2}`}
-          width={210}
+          width={140}
           height={0}
           className="w-full h-auto object-cover"
         />
