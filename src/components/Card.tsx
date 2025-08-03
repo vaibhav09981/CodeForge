@@ -10,6 +10,7 @@ interface CardProps {
   imgUrl: string;
   iconColor?: string;
   descriptionColor?: string;
+  imagePosition?: 'left' | 'right';
 }
 
 const Card = ({
@@ -22,12 +23,13 @@ const Card = ({
   titleColor = "text-black",
   iconColor = "black",
   descriptionColor = "text-black",
+  imagePosition = 'right',
 }: CardProps) => {
   return (
     <div
-      className={`grid grid-cols-2 gap-2 px-2 py-3 md:py-4 md:px-4 rounded-[45px] border border-b-4 w-full ${bgColor}`}
+      className={`grid grid-cols-2 gap-2 px-2 py-3 md:py-4 md:px-4 rounded-xl border border-b-4 w-full max-w-xl lg:max-w-6xl mx-auto ${bgColor}`}
     >
-      <div className="flex flex-col gap-6 justify-between">
+      <div className={`flex flex-col gap-6 justify-between ${imagePosition === 'left' ? 'order-2' : 'order-1'}`}>
         <h2 className={`text-lg md:text-xl font-bold leading-6 ${titleColor}`}>
           <span className={`px-2 rounded-md ${titleBgColor}`}>{title1}</span>{" "}
           <br />
@@ -53,12 +55,12 @@ const Card = ({
           <span className="hidden lg:inline-block"> Learn more </span>
         </button>
       </div>
-      <div>
+      <div className={`${imagePosition === 'left' ? 'order-1' : 'order-2'} flex items-center`}>
         <Image
           src={imgUrl}
           alt={`${title1} ${title2}`}
-          width={140}
-          height={0}
+          width={300}
+          height={300}
           className="w-full h-auto object-cover"
         />
       </div>
