@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="text-lg md:text-lg py-9 lg:max-w-lg">
             CodeForge is a student-led community dedicated to building practical skills through collaborative, open-source projects. We bridge the gap between theory and industry, empowering the next generation of developers.
           </p>
-          <a href="#projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
+          <a href="/projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
         </article>
         <div className="hidden lg:block">
           <Image
