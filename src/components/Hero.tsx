@@ -37,62 +37,70 @@ const Hero = () => {
           />
         </div>
       </section>
-      <section className="flex justify-center lg:justify-between flex-wrap gap-x-8 gap-y-3">
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/amazon.png"}
-            alt="amazon logo"
-            width={126}
-            height={0}
-          />
+      <div className="relative py-6">
+        <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
+        <div className="overflow-hidden">
+          <section className="flex justify-center lg:justify-between flex-nowrap gap-x-8 gap-y-3 relative z-10 animate-slide w-[200%]">
+
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/amazon.png"}
+              alt="amazon logo"
+              width={126}
+              height={0}
+            />
+          </div>
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/dribble.png"}
+              alt="dribble logo"
+              width={126}
+              height={0}
+            />
+          </div>
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/hubspot.png"}
+              alt="hubspot logo"
+              width={126}
+              height={0}
+            />
+          </div>
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/notion.png"}
+              alt="notion logo"
+              width={126}
+              height={0}
+            />
+          </div>
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/netflix.png"}
+              alt="netflix logo"
+              width={126}
+              height={48}
+            />
+          </div>
+          <div>
+            <Image
+              className="grayscale w-full h-auto"
+              src={"/zoom.png"}
+              alt="zoom logo"
+              width={126}
+              height={0}
+            />
+          </div>
+        </section>
+
         </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/dribble.png"}
-            alt="dribble logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/hubspot.png"}
-            alt="hubspot logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/notion.png"}
-            alt="notion logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/netflix.png"}
-            alt="netflix logo"
-            width={126}
-            height={48}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/zoom.png"}
-            alt="zoom logo"
-            width={126}
-            height={0}
-          />
-        </div>
-      </section>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
+      </div>
     </div>
   );
 };
