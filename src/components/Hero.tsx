@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="relative py-6">
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
         <div className="overflow-hidden">
-          <section className="flex justify-center lg:justify-between flex-nowrap gap-x-8 gap-y-3 relative z-10 animate-slide w-[200%]">
+          <section className="flex justify-center lg:justify-between flex-nowrap gap-x-8 gap-y-3 relative z-10 animate-slide">
 
           <div>
             <Image
