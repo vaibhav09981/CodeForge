@@ -10,7 +10,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="m-auto px-24 pt-10">
+    <main className="m-auto px-4 pt-10 md:px-24">
       <Hero />
       <LoginSignup />
       <Services />

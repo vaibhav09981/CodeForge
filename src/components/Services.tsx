@@ -10,77 +10,77 @@ const Services = () => {
         <h2 className="bg-green text-3xl font-bold p-2 rounded-md">What We Offer</h2>
         <p className="max-w-xl">
           At CodeForge, we provide a complete ecosystem for aspiring developers.
-           These are the core pillars of our community:
+          These are the core pillars of our community:
         </p>
       </div>
 
-      {/* Crads Section */}
+      {/* Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pt-10 lg:pt-16 place-items-center">
-          {/* Card 1 */}
-          <Card
-            title1="Collaborative"
-            title2="Projects"
-            description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software."
-            titleBgColor="bg-green"
-            bgColor="bg-grey"
-            imgUrl="/images/teamwork.png"
-          />
-          <Card
-            title1="Mentorship &"
-            title2="Learning"
-            description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from code reviews to workshops."
-            titleBgColor="bg-white"
-            bgColor="bg-green"
-            imgUrl="/images/communication.png"
-          />
-          <Card
-            title1="Portfolio"
-            title2="Building"
-            description="Build a public portfolio of work that stands out. Your contributions on GitHub will showcase your skills to future employers."
-            titleBgColor="bg-white"
-            bgColor="bg-dark"
-            imgUrl="/images/portfolio.png"
-            iconColor="white"
-          />
-          <Card
-            title1="Open-Source"
-            title2="Contribution"
-            description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs to adding new features."
-            titleBgColor="bg-green"
-            bgColor="bg-grey"
-            imgUrl="/images/opensource.png"
-          />
-          <Card
-            title1="Modern Tech"
-            title2="Stacks"
-            description="Work with the technologies that power the modern web. Get hands-on with tools like React, Next.js, and Tailwind CSS."
-            titleBgColor="bg-white"
-            bgColor="bg-green"
-            imgUrl="/images/tech-stack.png"
-          />
-          <Card
-            title1="Community"
-            title2="Support"
-            description="Connect with a vibrant community of developers. Get help, share knowledge, and collaborate on projects."
-            titleBgColor="bg-green"
-            bgColor="bg-dark"
-            imgUrl="/images/community.png"
-            iconColor="white"
-          />
-        </div>
+        <Card
+          title1="Collaborative"
+          title2="Projects"
+          description="Gain hands-on experience by contributing to real-world applications. Work in teams to build, test, and deploy meaningful software."
+          titleBgColor="bg-green"
+          bgColor="bg-grey"
+          imgUrl="/images/teamwork.png"
+        />
+        <Card
+          title1="Mentorship &"
+          title2="Learning"
+          description="Learn from peers and experienced members. Our community fosters a culture of knowledge sharing, from code reviews to workshops."
+          titleBgColor="bg-white"
+          bgColor="bg-green"
+          imgUrl="/images/communication.png"
+        />
+        <Card
+          title1="Portfolio"
+          title2="Building"
+          description="Build a public portfolio of work that stands out. Your contributions on GitHub will showcase your skills to future employers."
+          titleBgColor="bg-white"
+          bgColor="bg-dark"
+          imgUrl="/images/portfolio.png"
+          iconColor="white"
+          descriptionColor="text-white"
+        />
+        <Card
+          title1="Open-Source"
+          title2="Contribution"
+          description="Learn the fundamentals of open-source by contributing to our community projects, from fixing bugs to adding new features."
+          titleBgColor="bg-green"
+          bgColor="bg-grey"
+          imgUrl="/images/opensource.png"
+        />
+        <Card
+          title1="Modern Tech"
+          title2="Stacks"
+          description="Work with the technologies that power the modern web. Get hands-on with tools like React, Next.js, and Tailwind CSS."
+          titleBgColor="bg-white"
+          bgColor="bg-green"
+          imgUrl="/images/tech-stack.png"
+        />
+        <Card
+          title1="Community"
+          title2="Support"
+          description="Connect with a vibrant community of developers. Get help, share knowledge, and collaborate on projects."
+          titleBgColor="bg-green"
+          bgColor="bg-dark"
+          imgUrl="/images/community.png"
+          iconColor="white"
+          descriptionColor="text-white"
+        />
+      </div>
 
       {/* Proposal section */}
       <div className="relative flex justify-between items-center px-8 py-12 md:p-16 rounded-[45px] bg-gray mt-24 lg:mt-36">
         <div className="max-w-md flex flex-col gap-4">
           <h2 className="font-medium text-3xl">
-            Let&apos;s make things happen
+            Ready to Build With Us?
           </h2>
           <p>
-            Contact us today to learn more about how our digital marketing
-            services can help your business grow and succeed online.
+            Join a growing community of passionate student developers. Whether you&apos;re a beginner or an expert, your contribution matters.
           </p>
           <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
-            Get your free proposal
+            Join Our Whatsapp community
           </button>
         </div>
         <div>

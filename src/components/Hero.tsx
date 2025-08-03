@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="text-lg md:text-lg py-9 lg:max-w-lg">
             CodeForge is a student-led community dedicated to building practical skills through collaborative, open-source projects. We bridge the gap between theory and industry, empowering the next generation of developers.
           </p>
-          <a href="#projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
+          <a href="/projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
         </article>
         <div className="hidden lg:block">
           <Image
@@ -37,62 +37,144 @@ const Hero = () => {
           />
         </div>
       </section>
-      <section className="flex justify-center lg:justify-between flex-wrap gap-x-8 gap-y-3">
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/amazon.png"}
-            alt="amazon logo"
-            width={126}
-            height={0}
-          />
+      <div className="relative py-6">
+        <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
+        <div className="overflow-hidden">
+          <section className="relative z-10">
+            <div className="flex flex-nowrap gap-x-8 gap-y-3 animate-slide w-[200%]">
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/html.png"}
+                  alt="html logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/javascript.png"}
+                  alt="javascript logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/JSON.png"}
+                  alt="JSON logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/Tailwind.png"}
+                  alt="Tailwind logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/TypeScript.png"}
+                  alt="TypeScript logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/vercel.png"}
+                  alt="vercel logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/nextjs.png"}
+                  alt="nextjs logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              {/* Duplicate logos for continuous scroll */}
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/html.png"}
+                  alt="html logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/javascript.png"}
+                  alt="javascript logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/JSON.png"}
+                  alt="JSON logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/Tailwind.png"}
+                  alt="Tailwind logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/TypeScript.png"}
+                  alt="TypeScript logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/vercel.png"}
+                  alt="vercel logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  className="grayscale h-auto"
+                  src={"/nextjs.png"}
+                  alt="nextjs logo"
+                  width={80}
+                  height={0}
+                />
+              </div>
+            </div>
+          </section>
+
         </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/dribble.png"}
-            alt="dribble logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/hubspot.png"}
-            alt="hubspot logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/notion.png"}
-            alt="notion logo"
-            width={126}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/netflix.png"}
-            alt="netflix logo"
-            width={126}
-            height={48}
-          />
-        </div>
-        <div>
-          <Image
-            className="grayscale w-full h-auto"
-            src={"/zoom.png"}
-            alt="zoom logo"
-            width={126}
-            height={0}
-          />
-        </div>
-      </section>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
+      </div>
     </div>
   );
 };

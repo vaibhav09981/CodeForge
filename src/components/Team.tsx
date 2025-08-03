@@ -12,10 +12,10 @@ const Team = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-8 md:pt-16">
 
       </div>
-      <div className="sm:justify-self-end mt-10">
+      <div className="flex justify-center mt-10">
         <a href="/about" className="block">
           <button className="w-full bg-dark text-white px-9 py-5 rounded-[14px]">
-            See all team
+            Meet our team
           </button>
         </a>
       </div>

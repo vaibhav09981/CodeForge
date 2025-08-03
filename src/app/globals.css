@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeLine {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-fadeLine {
+  animation: fadeLine 3s ease-in-out infinite;
+}
+
+.animate-slide {
+  animation: slide 15s linear infinite;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
