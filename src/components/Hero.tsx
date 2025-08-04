@@ -41,134 +41,30 @@ const Hero = () => {
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gray-400 to-transparent animate-fadeLine" style={{ opacity: 1 }}></div>
         <div className="overflow-hidden">
           <section className="relative z-10">
-            <div className="flex flex-nowrap gap-x-8 gap-y-3 animate-slide w-[200%]">
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/html.png"}
-                  alt="html logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/javascript.png"}
-                  alt="javascript logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/JSON.png"}
-                  alt="JSON logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/Tailwind.png"}
-                  alt="Tailwind logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/TypeScript.png"}
-                  alt="TypeScript logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/vercel.png"}
-                  alt="vercel logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/nextjs.png"}
-                  alt="nextjs logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              {/* Duplicate logos for continuous scroll */}
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/html.png"}
-                  alt="html logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/javascript.png"}
-                  alt="javascript logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/JSON.png"}
-                  alt="JSON logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/Tailwind.png"}
-                  alt="Tailwind logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/TypeScript.png"}
-                  alt="TypeScript logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/vercel.png"}
-                  alt="vercel logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
-              <div className="flex-shrink-0">
-                <Image
-                  className="grayscale h-auto"
-                  src={"/nextjs.png"}
-                  alt="nextjs logo"
-                  width={80}
-                  height={0}
-                />
-              </div>
+            <div className="flex flex-nowrap gap-x-24 animate-slide w-[200%]">
+              {[...Array(2)].map((_, index) => (
+                <React.Fragment key={index}>
+                  {[
+                    { src: "/html.png", alt: "html logo" },
+                    { src: "/javascript.png", alt: "javascript logo" },
+                    { src: "/JSON.png", alt: "JSON logo" },
+                    { src: "/Tailwind.png", alt: "Tailwind logo" },
+                    { src: "/TypeScript.png", alt: "TypeScript logo" },
+                    { src: "/vercel.png", alt: "vercel logo" },
+                    { src: "/nextjs.png", alt: "nextjs logo" },
+                  ].map((logo, i) => (
+                    <div className="flex-shrink-0" key={`${logo.alt}-${i}`}>
+                      <Image
+                        className="grayscale w-20 h-20 object-contain"
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={80}
+                        height={80}
+                      />
+                    </div>
+                  ))}
+                </React.Fragment>
+              ))}
             </div>
           </section>
 
