@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Card from "./Card";
 
 const Services = () => {
@@ -79,9 +80,9 @@ const Services = () => {
           <p>
             Join a growing community of passionate student developers. Whether you&apos;re a beginner or an expert, your contribution matters.
           </p>
-          <button className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
+          <Link href="/whatsapp-community" className="bg-dark py-5 px-5 md:px-9 text-gray rounded-2xl md:self-start">
             Join Our Whatsapp community
-          </button>
+          </Link>
         </div>
         <div>
           <Image
