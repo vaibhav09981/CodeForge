@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     if (profilePic) {
       const fileExt = profilePic.name.split('.').pop();
       const fileName = `${data.user?.id}.${fileExt}`;
-      const { data: uploadData, error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabase.storage
         .from('profile-pics')
         .upload(fileName, profilePic, { cacheControl: '3600', upsert: true });
 
@@ -65,7 +65,10 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ message: 'User registered successfully', user: data.user });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+    return NextResponse.json({ error: 'Unknown error' }, { status: 500 });
   }
 }
