@@ -10,37 +10,37 @@ const Accordion: React.FC = () => {
       id: 1,
       title: "How do we begin our journey at CodeForge?",
       content:
-        "Your first step is to join our vibrant community! Connect with us on Discord and become a part of our GitHub organization. This is where you'll meet the team, get acquainted with our ongoing projects, and discover opportunities to contribute.",
+        "Our first step is to join our vibrant community! We connect on Discord and become a part of our GitHub organization. This is where we meet the team, get acquainted with our ongoing projects, and discover opportunities to contribute.",
     },
     {
       id: 2,
       title: "How do we choose a project to work on?",
       content:
-        "Once you're in, explore our GitHub repositories. We have a range of projects, from open-source tools to internal applications. Look for issues labeled 'good first issue' or 'help wanted' to get started, or propose our own ideas!",
+        "Once we're in, we explore our GitHub repositories. We have a range of projects, from open-source tools to internal applications. We look for issues labeled 'good first issue' or 'help wanted' to get started, or propose our own ideas!",
     },
     {
       id: 3,
       title: "What's the process for making our first contribution?",
       content:
-        "Fork the repository, create a new branch, and make your changes. Once you're done, submit a pull request. Our maintainers are here to guide you through the process and help you get your code ready for review.",
+        "We fork the repository, create a new branch, and make our changes. Once we're done, we submit a pull request. Our maintainers are here to guide us through the process and help us get our code ready for review.",
     },
     {
       id: 4,
       title: "How does code review and feedback work?",
       content:
-        "Our team provides constructive feedback to help you improve your code and learn best practices. We believe in collaborative learning, so don't hesitate to ask questions and engage in discussions during the review process.",
+        "Our team provides constructive feedback to help us improve our code and learn best practices. We believe in collaborative learning, so we don't hesitate to ask questions and engage in discussions during the review process.",
     },
     {
       id: 5,
-      title: "What happens after my code is reviewed?",
+      title: "What happens after our code is reviewed?",
       content:
-        "Once your pull request is approved, your code will be merged into the main branch and deployed. You'll see your contributions live, making a real impact on our projects and the community.",
+        "Once our pull request is approved, our code will be merged into the main branch and deployed. We'll see our contributions live, making a real impact on our projects and the community.",
     },
     {
       id: 6,
       title: "How can we showcase our contributions?",
       content:
-        "We encourage you to share your work! You can add your contributions to your portfolio, mention them on your resume, and even present them at our community showcases. Your efforts are valuable and deserve recognition!",
+        "We encourage each other to share our work! We can add our contributions to our portfolios, mention them on our resumes, and even present them at our community showcases. Our collective efforts are valuable and deserve recognition!"
     },
   ];
 

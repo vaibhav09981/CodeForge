@@ -13,7 +13,7 @@ const Team = () => {
 
       </div>
       <div className="flex justify-center mt-10">
-        <a href="/about" className="block">
+        <a href="/team/team_section" className="block">
           <button className="w-full bg-dark text-white px-9 py-5 rounded-[14px]">
             Meet our team
           </button>

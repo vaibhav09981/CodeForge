@@ -27,7 +27,7 @@ const Footer = () => {
               href="#!"
               className="group-hover:text-green transition-all delay-200 flex hover:underline text-gray"
             >
-              Services
+              
             </a>
           </li>
           <li className="group block ">
