@@ -15,8 +15,8 @@ const Hero = () => {
             <Image
               src={"/speaker.png"}
               alt="speaker image"
-              width={750}
-              height={0}
+              width={500}
+              height={500}
               priority
               className="lg:hidden w-auto h-auto"
             />
@@ -26,12 +26,12 @@ const Hero = () => {
           </p>
           <a href="/projects" className="bg-black text-white px-4 py-2 rounded-md shadow-xl hover:scale-105 duration-300 transition-all">Explore Projects</a>
         </article>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block ml-auto flex-shrink-0">
           <Image
             src={"/speaker.png"}
             alt="speaker image"
-            width={700}
-            height={0}
+            width={500}
+            height={500}
             priority
             className="w-auto h-auto object-cover"
           />

@@ -27,7 +27,7 @@ const Footer = () => {
               href="#!"
               className="group-hover:text-green transition-all delay-200 flex hover:underline text-gray"
             >
-              Services
+              
             </a>
           </li>
           <li className="group block ">
@@ -84,12 +84,11 @@ const Footer = () => {
           <h3 className="text-black font-bold inline mb-10 lg:mb-0">
             <span className="bg-green px-1 py-0.5 rounded-lg">Contact us:</span>
           </h3>
-          <p>Email: info@codeforge.com </p>
-          <p>Phone: 555-567-8901</p>
           <p>
-            Address: 1234 Main St <br />
-            Moonstone City, Stardust State 12345
+            Email: <a href="mailto:vaibhavjj99@gmail.com" className="hover:underline">vaibhavjj99@gmail.com</a>
           </p>
+          <p>Phone: +91 8851 407148</p>
+          {/* Removed Address Section */}
         </div>
         <div className="bg-[#292A32] px-10 py-14 rounded-[14px]">
           <form className="flex flex-col md:flex-row gap-5">
@@ -99,7 +98,7 @@ const Footer = () => {
               className="bg-transparent px-4 xl:px-9 py-3 md:py-5 rounded-[14px] border border-white text-white w-full"
             />
             <button className="bg-green px-4 xl:px-9 py-3 md:py-5 rounded-[14px] w-full">
-              Subscribe to news
+              Be a part of our community
             </button>
           </form>
         </div>

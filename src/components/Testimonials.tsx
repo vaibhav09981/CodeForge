@@ -10,7 +10,7 @@ const Testimonials = () => {
         </h2>
         <p className="max-w-lg">
           Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
-          about Our Digital Marketing Services
+          about Our Digital Marketing
         </p>
       </div>
       <TestimonialsCard />
